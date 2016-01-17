@@ -1,0 +1,58 @@
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    width: 400px;
+    margin: 0 auto;
+    -webkit-box-shadow: 1px 18px 10px -9px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 1px 18px 10px -9px rgba(0, 0, 0, 0.50);
+    box-shadow: 1px 18px 10px -9px rgba(0, 0, 0, 0.50);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.inner {
+    height: 200px;
+    width: auto;
+    position: absolute;
+    left: 0;
+    white-space: nowrap;
+}
+.holder, .in, .hidden {
+    position: absolute;
+    overflow: hidden;
+}
+.hidden {
+    display: none;
+}
+.caption {
+    width: 100%;
+    padding: 0.4em 0;
+    position:absolute;
+    display: table;
+    bottom:2px;
+    left: 0;
+    text-shadow: none;
+    background: url(data:image/svg+xml;
+    base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjY1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#33000000', GradientType=1);
+}
+.caption p {
+    padding: 0 0.2em;
+    line-height: 1em;
+    font-size: 15px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    white-space: normal;
+    color: #fff;
+    -moz-opacity: 0.60;
+    opacity: 0.60;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=60);
+}

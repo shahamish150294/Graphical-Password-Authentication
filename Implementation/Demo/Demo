@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+	<html class="no-js"><!--<![endif]-->
+    <head>
+        <title>Scroll</title>
+        <script type="text/javascript">
+            var _lis = document.getElementsByTagName('li');
+    for (var i = 0; i < _lis.length; ++i) {
+        _lis[i].addEventListener('mousedown', function(e) {
+            if (e.clientX < (this.offsetWidth >> 1)) {
+                this.appendChild(this.removeChild(this.firstElementChild));
+            } else {
+                this.insertBefore(this.lastElementChild, this.firstElementChild);
+               }
+        });
+    }</script>
+    <style type="text/css">
+		body {
+		    margin: 0;
+		}
+		div {
+		    width: 500px;
+		    overflow-x: hidden;
+		}
+		ul {
+		    list-style: none;
+		    width: 100%;
+		    padding: 0;
+		}
+		li {
+		    clear: both;
+		    white-space: nowrap;
+		    position: relative;
+		    height: 200px;
+		    width: 100%;
+		    overflow-x: hidden;
+		    padding: 0;
+		}
+		img {
+		    -webkit-transition: all 0.25s ease-out;
+		    -moz-transition: all 0.25s ease-out;
+		    -o-transition: all 0.25s ease-out;
+		    transition: all 0.25s ease-out;
+		    position: absolute;
+		    display: block;
+		    top: 0;
+		}
+		img:nth-of-type(1) {
+		    left: -700px;
+		}
+		img:nth-of-type(2) {
+		    left: -300px;
+		}
+		img:nth-of-type(3) {
+		    left: 100px;
+		}
+		img:nth-of-type(4) {
+		    left: 500px;
+		}
+		img:nth-of-type(5) {
+		    left: 900px;
+		}
+		img:nth-of-type(6) {
+		    left: 1300px;
+		}
+		
+    </style>
+    </head>
+    <body>
+    	<div>
+    <ul>
+        <li>
+            <img src="http://lorempixel.com/400/200/sports/image%201/" />
+            <img src="http://lorempixel.com/400/200/nature/image%202/" />
+            <img src="http://lorempixel.com/400/200/business/image%203/" />
+            <img src="http://lorempixel.com/400/200/food/image%204/" />
+            <img src="http://lorempixel.com/400/200/abstract/image%205/" />
+            <img src="http://lorempixel.com/400/200/fashion/image%206/" />
+        </li>
+        <li>
+            <img src="http://lorempixel.com/400/200/sports/image%202/" />
+            <img src="http://lorempixel.com/400/200/nature/image%203/" />
+            <img src="http://lorempixel.com/400/200/business/image%204/" />
+            <img src="http://lorempixel.com/400/200/food/image%205/" />
+            <img src="http://lorempixel.com/400/200/abstract/image%206/" />
+            <img src="http://lorempixel.com/400/200/fashion/image%207/" />
+        </li>
+        <li>
+            <img src="http://lorempixel.com/400/200/sports/image%204/" />
+            <img src="http://lorempixel.com/400/200/nature/image%205/" />
+            <img src="http://lorempixel.com/400/200/business/image%206/" />
+            <img src="http://lorempixel.com/400/200/food/image%207/" />
+            <img src="http://lorempixel.com/400/200/abstract/image%208/" />
+            <img src="http://lorempixel.com/400/200/fashion/image%209/" />
+        </li>
+        <li>
+            <img src="http://lorempixel.com/400/200/sports/image%209/" />
+            <img src="http://lorempixel.com/400/200/nature/image%208/" />
+            <img src="http://lorempixel.com/400/200/business/image%207/" />
+            <img src="http://lorempixel.com/400/200/food/image%206/" />
+            <img src="http://lorempixel.com/400/200/abstract/image%205/" />
+            <img src="http://lorempixel.com/400/200/fashion/image%204/" />
+        </li>
+    </ul>
+</div>
+    </body>
+</html>
+

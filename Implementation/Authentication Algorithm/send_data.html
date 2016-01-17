@@ -1,0 +1,43 @@
+<<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="receive_data.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
+</body>
+</html>
+<script type="text/javascript">
+
+var position = []; 
+for(i=0;i<=2;i++)
+        {
+        	position.push(JSON.stringify({id:1}));
+		}
+
+$.ajax({
+            url: "receive_data.php",
+            type: "POST",
+            data: {
+                'position[]': position
+            },
+            success: function () {
+
+            },
+            error: function () {
+
+            }
+        });
+
+for(i=0;i<=2;i++)
+        {
+         position.push(i);
+	}
+
+var params={position: position }
+var paramJSON = JSON.stringify(params);
+window.alert(paramJSON);
+</script>
